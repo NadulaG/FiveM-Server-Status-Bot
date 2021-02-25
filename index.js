@@ -10,8 +10,8 @@ client.on('ready', async message => {
 setInterval(() => {
 Gamedig.query({
   type: 'fivem',
-  host: '', // server ip 
-  port: "" // server port
+  host: '51.81.48.201', // server ip 
+  port: "30118" // server port
 }).then(async(state) => {
   var players = [];
   state.players.forEach(p => {
