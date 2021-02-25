@@ -31,8 +31,8 @@ Gamedig.query({
       .addField('**Online Players:**', `**Total:** \`${state.raw.clients}\` / \`${state.raw.sv_maxclients}\``, true)
       .addField('**Current Players:**', `${players.join(',  ').toString()}`);
       //.setFooter(); you can use this to have your server name & icon. For example: .setFooter(`GravHub`, `https://gravhub.pic`)
-      const maindiscord = client.guilds.find(g => g.id === '') // put your discord server's id between ''
-      const statuschannel = maindiscord.channels.find(c => c.id === ''); // put the id of the channel that you want the status message in
+      const maindiscord = client.guilds.find(g => g.id === '813495829008613457') // put your discord server's id between ''
+      const statuschannel = maindiscord.channels.find(c => c.id === '814308527073001502'); // put the id of the channel that you want the status message in
       statuschannel.fetchMessage('').then((msg) => { // you need to make your bot say something in this channel first then use that message id to put here
           msg.edit(embed)
       })
